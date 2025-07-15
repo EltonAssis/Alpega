@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Professores</title>
+	<title>Galeria</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -149,43 +149,20 @@
 	
 	<div id="fh5co-staff">
 		<div class="container">
-			<div class="row">
+			
+			<div class="gallery" id="gallery">
+    <!-- Imagens e legendas geradas por JavaScript -->
+  </div>
 
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(../images/staff-2.jpg);">
-							<ul class="fh5co-social">
-								<li><button id="open-modal">+<i class="icon-eye"></i></button></li>
-							</ul>
-						</div>
-						<h3>Biblioteca</h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div id="fade" class="hide"></div>
-				<!-- imagem em ponto grande -->
-    			<div id="modal" class="hide" style="background-image: url(/images/img_bg_4.jpg);">
-    				  <button id="close-modal">x</button>
-				</div>
-
-				<div class="col-md-3 animate-box text-center">
-					<div class="staff">
-						<div class="staff-img" style="background-image: url(../images/staff-2.jpg);">
-							<ul class="fh5co-social">
-								<li><button id="open-modal">+<i class="icon-eye"></i></button></li>
-							</ul>
-						</div>
-						<h3>Biblioteca</h3>
-						<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi.</p>
-					</div>
-				</div>
-				<div id="fade" class="hide"></div>
-				<!-- imagem em ponto grande -->
-    			<div id="modal" class="hide" style="background-image: url(/images/img_bg_4.jpg);">
-    				  <button id="close-modal">x</button>
-				</div>
-	
-			</div>
+  <div class="modal-fade" id="fade"></div>
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+      <button class="close" id="close" aria-label="Fechar modal">×</button>
+      <button class="prev" id="prev" aria-label="Imagem anterior">❮</button>
+      <button class="next" id="next" aria-label="Próxima imagem">❯</button>
+    </div>
+  </div>
+			
 		</div>
 	</div>
 

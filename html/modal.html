@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modal JavaScript</title>
-    <link rel="stylesheet" href="/css/modal.css" />
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/modal.js" defer></script>
-  </head>
-  <body>
-    <h1>JavaScript Modal</h1>
-    <button id="open-modal">Abrir</button>
-    <div id="fade" class="hide"></div>
-    <div id="modal" class="hide" style="background-image: url(/images/work_1.png);">
-      <button id="close-modal">X</button>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria</title>
+	<link rel="stylesheet" href="/css/modal.css">
+	<script src="/js/modal.js" defer></script>
+</head>
+
+<body>
+
+  <div class="gallery" id="gallery">
+    <!-- Imagens e legendas geradas por JavaScript -->
+  </div>
+
+  <div class="modal-fade" id="fade"></div>
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modalContent">
+      <button class="close" id="close" aria-label="Fechar modal">×</button>
+      <button class="prev" id="prev" aria-label="Imagem anterior">❮</button>
+      <button class="next" id="next" aria-label="Próxima imagem">❯</button>
     </div>
-  </body>
+  </div>
+	
+</body>
 </html>

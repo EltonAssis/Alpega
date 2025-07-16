@@ -1,14 +1,14 @@
 const images = [
-  { src: "/images/img_bg_1.jpg", caption: "Paisagem natural com montanhas" },
-  { src: "/images/img_bg_2.jpg", caption: "Cidade moderna durante o pôr do sol" },
-  { src: "/images/img_bg_3.jpg", caption: "Praia tropical com coqueiros" },
-  { src: "/images/img_bg_4.jpg", caption: "Floresta densa com luz solar" },
-  { src: "/images/person1.jpg", caption: "Retrato profissional feminino" },
-  { src: "/images/person2.jpg", caption: "Homem sorrindo em ambiente casual" },
-  { src: "/images/person3.jpg", caption: "Mulher em traje formal" },
-  { src: "/images/img_bg_1.jpg", caption: "Outra vista das montanhas" },
-  { src: "/images/img_bg_2.jpg", caption: "Vista noturna da cidade" },
-  { src: "/images/img_bg_3.jpg", caption: "Praia com ondas fortes" },
+  { src: "../images/img_bg_1.jpg", caption: "Paisagem natural com montanhas" },
+  { src: "../images/img_bg_2.jpg", caption: "Cidade moderna durante o pôr do sol" },
+  { src: "../images/img_bg_3.jpg", caption: "Praia tropical com coqueiros" },
+  { src: "../images/img_bg_4.jpg", caption: "Floresta densa com luz solar" },
+  { src: "../images/person1.jpg", caption: "Retrato profissional feminino" },
+  { src: "../images/person2.jpg", caption: "Homem sorrindo em ambiente casual" },
+  { src: "../images/person3.jpg", caption: "Mulher em traje formal" },
+  { src: "../images/img_bg_1.jpg", caption: "Outra vista das montanhas" },
+  { src: "../images/img_bg_2.jpg", caption: "Vista noturna da cidade" },
+  { src: "../images/img_bg_3.jpg", caption: "Praia com ondas fortes" },
 ];
 
 const gallery = document.getElementById('gallery');

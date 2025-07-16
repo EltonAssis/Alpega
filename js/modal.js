@@ -22,7 +22,7 @@ const images = [
   { src: "../images/img of gallery/IMG-20250715-WA0021.jpg", caption: "Praia com ondas fortes" },
 ];
 
-const gallery = document.getElementById('gallery');
+const gallery = document.getElementById('galeria');
 const modal = document.getElementById('modal');
 const fade = document.getElementById('fade');
 const modalContent = document.getElementById('modalContent');

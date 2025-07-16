@@ -1121,7 +1121,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.1);
 }
 #fh5co-gallery h2 span:before {
-  left: 0;
+  lett: 0;
   margin-left: -125px;
 }
 #fh5co-gallery h2 span:after {
@@ -1130,7 +1130,17 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gallery {
-  margin-top: 20px;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+.gallery:hover {
+  -webkit-box-shadow: inset 0px 0px 124px 11px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: inset 0px 0px 124px 11px rgba(0, 0, 0, 0.74);
+  box-shadow: inset 0px 0px 124px 11px rgba(0, 0, 0, 0.74);
 }
 
 

@@ -1,5 +1,5 @@
 /* Importação de Fonte */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
 
 /* Reset Básico e Box Sizing */
 * {
@@ -22,24 +22,11 @@ body {
 }
 
 /* Botões */
-.btn-primary {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
 
-.btn-primary:hover {
-    background-color: #0056b3;
-}
 
 /* Header do Curso */
-.course-header {
-    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente moderno */
+/* .course-header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     color: #fff;
     padding: 60px 0;
     text-align: center;
@@ -55,7 +42,7 @@ body {
 .course-header p {
     font-size: 1.2em;
     margin-bottom: 30px;
-}
+} */
 
 /* Conteúdo Principal */
 .course-content {
@@ -84,19 +71,26 @@ body {
 }
 
 .course-info ul li {
-    background-color: #e9f7ef; /* Cor suave para itens de lista */
     margin-bottom: 8px;
     padding: 10px 15px;
     border-radius: 4px;
     display: flex;
     align-items: center;
+    font-size: 18px;
+    color: black;
 }
 
 .course-info ul li::before {
     content: '✔'; /* Ícone de check */
-    color: #28a745;
+    color: rgb(51, 51, 241);
     margin-right: 10px;
     font-weight: bold;
+}
+
+
+.course-info p {
+    font-size: 18px;
+    color: black;
 }
 
 /* Vantagens e Benefícios */
@@ -129,7 +123,7 @@ body {
 /* Galeria de Imagens */
 .gallery-container {
     position: relative;
-    width: 100%;
+    width: 40%;
     max-width: 800px;
     margin: 0 auto 20px auto;
     overflow: hidden;
@@ -351,10 +345,7 @@ body {
         padding: 20px;
     }
 
-    .btn-primary {
-        padding: 10px 20px;
-        font-size: 0.9em;
-    }
+
 
     .course-curriculum .class-level h3 {
         font-size: 1.4em;

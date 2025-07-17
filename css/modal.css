@@ -8,14 +8,14 @@ body {
   background: #f0f0f0;
 }
 
-.gallery {
+.galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 25px;
 }
 
 @media (max-width: 768px) {
-  .gallery {
+  .galeria {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 15px;
   }

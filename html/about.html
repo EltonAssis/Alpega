@@ -58,7 +58,7 @@
 						</div>
 
 						<ul class="fh5co-social">
-							<li><a href="#">Boletim Informativo</a></li>
+							<li><a href="news.html#Boletim">Boletim Informativo</a></li>
 							<li><a href="contact.html">Contacto</a></li>
 							<li><a href="#"><i class="icon-whatsapp"></i></a></li>
 							<li><a href="#"><i class="icon-instagram"></i></a></li>
@@ -97,11 +97,9 @@
 							<li class="has-dropdown">
 								<a href="about.html">Sobre Nós</a>
 								<ul class="dropdown">
-									<li><a href="#">Matriculas</a></li>
-									<li><a href="#">Missão</a></li>
-									<li><a href="#">Visão</a></li>
-									<li><a href="#">Valores</a></li>
-									<li><a href="#">Regulamento</a></li>
+									<li><a href="#matriculas">Matriculas</a></li>
+									<li><a href="#regulamento">Regulamento</a></li>
+									<li><a href="#missao">Missão, Visão e Valores</a></li>
 								</ul>
 							</li>
 
@@ -143,12 +141,140 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa inventore tenetur, dolore, dolorum corrupti repellendus fugiat quo quibusdam alias blanditiis natus eius. Ipsam dolor dolore molestias voluptate porro reiciendis voluptas.</p>
 			</div>
 			<div class="col-md-6">
-				<img class="img-responsive" src="../images/img_bg_2.jpg" alt="">
+				<img class="img-responsive" src="../images/img_gallery/IMG-20250715-WA0018.jpg" alt="alpega" style="border-radius: 10px;">
 			</div>
 		</div>
 	</div>
 
-	<div id="fh5co-counter" class="fh5co-counters" style="background-image: url(../images/img_bg_4.jpg);" data-stellar-background-ratio="0.5">
+	<!-- Matriculas -->
+		 <div class="enrollment-container" id="matriculas">
+        <!-- Cabeçalho -->
+        <header class="enrollment-header">
+            <h1>Matrículas 2025</h1>
+            <p>Garanta já a vaga do seu filho no Colégio Alpega</p>
+        </header>
+        
+        <!-- Seção de Período de Matrículas -->
+        <section>
+            <div class="periudo">
+                <div class="periudo_new">
+                    <h3>Renovação de Matrícula</h3>
+                    <p>01/08 a 10/09/2025</p>
+                </div>
+                <div class="periudo_new">
+                    <h3>Alunos Novos</h3>
+                    <p>01/08/2025 a 31/08/2025</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Passo a Passo -->
+        <section class="enrollment-steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>Pré-matrícula Online</h3>
+                <p>Preencha o formulário de interesse no nosso site para iniciar o processo.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>Agendamento</h3>
+                <p>Nossa equipe entrará em contato para agendar a visita e entrevista.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>Documentação</h3>
+                <p>Compareça na escola com os documentos necessários para formalização.</p>
+            </div>
+        </section>
+        
+        <!-- Documentos Necessários -->
+        <section class="documents-list">
+            <h2>Documentos Necessários</h2>
+            <div class="documents-grid">
+                <div class="document-item">
+                    <h3>Documentos do Aluno</h3>
+                    <ul>
+                        <li>Certidão de Nascimento (cópia)</li>
+                        <li>RG e CPF (cópia)</li>
+                        <li>Comprovante de residência</li>
+                        <li>2 fotos 3x4 recentes</li>
+                        <li>Histórico escolar (para transferências)</li>
+                    </ul>
+                </div>
+                <div class="document-item">
+                    <h3>Documentos dos Responsáveis</h3>
+                    <ul>
+                        <li>RG e CPF (cópia)</li>
+                        <li>Comprovante de renda</li>
+                        <li>Comprovante de residência</li>
+                    </ul>
+                </div>
+                <div class="document-item">
+                    <h3>Documentos Médicos</h3>
+                    <ul>
+                        <li>Carteira de vacinação atualizada</li>
+                        <li>Atestado médico para atividades físicas</li>
+                        <li>Relatório médico (se necessário)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Formulário de Pré-Matrícula -->
+        <section class="enrollment-form-container">
+			<span class="step-number">1</span>
+            <h2>Pré-Matrícula Online</h2>
+            <form id="enrollment-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="student-name">Nome Completo do Aluno</label>
+                    <input type="text" id="student-name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birth-date">Data de Nascimento</label>
+                    <input type="date" id="birth-date" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="grade-level">Série/Ano Desejado</label>
+                    <select id="grade-level" class="form-control" required>
+                        <option value="">Selecione...</option>
+                        <option value="1-ano">1º Ano Fundamental</option>
+                        <option value="2-ano">2º Ano Fundamental</option>
+                        <!-- Outras opções -->
+                        <option value="10-ano">10ª Classe</option>
+                        <option value="11-ano">11ª Classe</option>
+                        <option value="12-ano">12ª Classe</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parent-name">Nome do Responsável</label>
+                    <input type="text" id="parent-name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parent-email">E-mail do Responsável</label>
+                    <input type="email" id="parent-email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parent-phone">Telefone para Contato</label>
+                    <input type="tel" id="parent-phone" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required> Li e aceito os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Pré-Matrícula</button>
+            </form>
+        </section>
+    </div>
+
+	<div id="fh5co-counter" class="fh5co-counters" style="background-image: url(../images/img_gallery/IMG-20250715-WA0018.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -173,6 +299,12 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="regulamento" id="regulamento">
+		<h2>Regulamento Do Colégio</h2>
+		<img src="../images/regulamento.jpg" alt="Regulamento">
+		<a href="../images/regulamento.jpg" download="Regulamento do colégio Alpega">Baixar</a>
 	</div>
 
 	<div id="fh5co-course-categories">
@@ -276,23 +408,32 @@
 		</div>
 	</div>
 
-	<div id="fh5co-gallery" class="fh5co-bg-section">
-		<div class="row text-center">
-			<h2><span>Galeria</span></h2>
-		</div>
-		<div class="row">
-			<div class="col-md-3 col-padded">
-				<a href="#" class="gallery" style="background-image: url(../images/project-5.jpg);"></a>
+	<div class="fh5co-bg-section" id="missao">
+		<div class="missao-visao-valores">
+			<div class="divisoria">
+				<div>
+					<h2>Missão</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi sint sunt cumque mollitia veniam, minima libero laboriosam molestiae placeat error at sed, quisquam ex exercitationem alias maxime, velit quod.</p>
+				</div>
+				<img src="../images/img_gallery/IMG-20250715-WA0010.jpg" alt="">
 			</div>
-			<div class="col-md-3 col-padded">
-				<a href="#" class="gallery" style="background-image: url(../images/project-2.jpg);"></a>
+
+			<div class="divisoria">
+				<div>
+					<h2>Visão</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi sint sunt cumque mollitia veniam, minima libero laboriosam molestiae placeat error at sed, quisquam ex exercitationem alias maxime, velit quod.</p>
+				</div>
+				<img src="../images/img_gallery/IMG-20250715-WA0020.jpg" alt="">
 			</div>
-			<div class="col-md-3 col-padded">
-				<a href="#" class="gallery" style="background-image: url(../images/project-3.jpg);"></a>
+
+			<div class="divisoria">
+				<div>
+					<h2>Valores</h2>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat sequi sint sunt cumque mollitia veniam, minima libero laboriosam molestiae placeat error at sed, quisquam ex exercitationem alias maxime, velit quod.</p>
+				</div>
+				<img src="../images/img_gallery/IMG-20250715-WA0018.jpg" alt="">
 			</div>
-			<div class="col-md-3 col-padded">
-				<a href="#" class="gallery" style="background-image: url(../images/project-4.jpg);"></a>
-			</div>
+			
 		</div>
 	</div>
 

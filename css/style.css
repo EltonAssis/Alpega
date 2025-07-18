@@ -2071,7 +2071,7 @@ Boletim informativo
   }
 }
 
-form{
+.form{
   width: 60%;
 }
 
@@ -2127,7 +2127,7 @@ form{
   .enrollment-header h1 {
       font-size: 2rem;
   }
-  form{
+  .form{
   width: 95%;
   }
 

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrículas - Colégio Alpega</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Estilos específicos para a página de matrículas */
+        .enrollment-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .enrollment-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .enrollment-header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .enrollment-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+        
+        .step {
+            flex: 0 0 calc(33.333% - 2rem);
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #3498db;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .step h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .documents-list {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+        
+        .documents-list h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .document-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .enrollment-form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .btn-submit {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background: #2980b9;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .step {
+                flex: 0 0 calc(50% - 1rem);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .step {
+                flex: 0 0 100%;
+            }
+            
+            .documents-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .enrollment-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="enrollment-container">
+        <!-- Cabeçalho -->
+        <header class="enrollment-header">
+            <h1>Matrículas 2025</h1>
+            <p>Garanta já a vaga do seu filho no Colégio Alpega</p>
+        </header>
+        
+        <!-- Seção de Período de Matrículas -->
+        <section class="enrollment-period">
+            <h2>Período de Matrículas</h2>
+            <div class="period-cards">
+                <div class="period-card">
+                    <h3>Renovação de Matrícula</h3>
+                    <p>01/11 a 15/12/2024</p>
+                </div>
+                <div class="period-card">
+                    <h3>Alunos Novos</h3>
+                    <p>16/12/2024 a 31/01/2025</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Passo a Passo -->
+        <section class="enrollment-steps">
+            <h2 class="section-title">Como se Matricular</h2>
+            <div class="step">
+                <span class="step-number">1</span>
+                <h3>Pré-matrícula Online</h3>
+                <p>Preencha o formulário de interesse no nosso site para iniciar o processo.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <h3>Agendamento</h3>
+                <p>Nossa equipe entrará em contato para agendar a visita e entrevista.</p>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <h3>Documentação</h3>
+                <p>Compareça na escola com os documentos necessários para formalização.</p>
+            </div>
+        </section>
+        
+        <!-- Documentos Necessários -->
+        <section class="documents-list">
+            <h2>Documentos Necessários</h2>
+            <div class="documents-grid">
+                <div class="document-item">
+                    <h3>Documentos do Aluno</h3>
+                    <ul>
+                        <li>Certidão de Nascimento (cópia)</li>
+                        <li>RG e CPF (cópia)</li>
+                        <li>Comprovante de residência</li>
+                        <li>2 fotos 3x4 recentes</li>
+                        <li>Histórico escolar (para transferências)</li>
+                    </ul>
+                </div>
+                <div class="document-item">
+                    <h3>Documentos dos Responsáveis</h3>
+                    <ul>
+                        <li>RG e CPF (cópia)</li>
+                        <li>Comprovante de renda</li>
+                        <li>Comprovante de residência</li>
+                    </ul>
+                </div>
+                <div class="document-item">
+                    <h3>Documentos Médicos</h3>
+                    <ul>
+                        <li>Carteira de vacinação atualizada</li>
+                        <li>Atestado médico para atividades físicas</li>
+                        <li>Relatório médico (se necessário)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Formulário de Pré-Matrícula -->
+        <section class="enrollment-form-container">
+            <h2>Pré-Matrícula Online</h2>
+            <form id="enrollment-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="student-name">Nome Completo do Aluno</label>
+                    <input type="text" id="student-name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="birth-date">Data de Nascimento</label>
+                    <input type="date" id="birth-date" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="grade-level">Série/Ano Desejado</label>
+                    <select id="grade-level" class="form-control" required>
+                        <option value="">Selecione...</option>
+                        <option value="1-ano">1º Ano Fundamental</option>
+                        <option value="2-ano">2º Ano Fundamental</option>
+                        <!-- Outras opções -->
+                        <option value="10-ano">10ª Classe</option>
+                        <option value="11-ano">11ª Classe</option>
+                        <option value="12-ano">12ª Classe</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parent-name">Nome do Responsável</label>
+                    <input type="text" id="parent-name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parent-email">E-mail do Responsável</label>
+                    <input type="email" id="parent-email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="parent-phone">Telefone para Contato</label>
+                    <input type="tel" id="parent-phone" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required> Li e aceito os <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="btn-submit">Enviar Pré-Matrícula</button>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,353 @@
+/* Importação de Fonte */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); */
+
+/* Reset Básico e Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Botões */
+
+
+/* Header do Curso */
+/* .course-header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.course-header p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+} */
+
+/* Conteúdo Principal */
+.course-content {
+    padding: 40px 0;
+}
+
+.course-content section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.course-content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.course-info ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.course-info ul li {
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+}
+
+.course-info ul li::before {
+    content: '✔'; /* Ícone de check */
+    color: rgb(51, 51, 241);
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+.course-info p {
+    font-size: 18px;
+    color: black;
+}
+
+/* Vantagens e Benefícios */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.benefit-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-item h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+/* Galeria de Imagens */
+.gallery-container {
+    position: relative;
+    width: 40%;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-img {
+    width: 100%;
+    display: none;
+    border-radius: 8px;
+}
+
+.gallery-img.active {
+    display: block;
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+}
+
+.gallery-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.thumbnail.active,
+.thumbnail:hover {
+    opacity: 1;
+    border: 2px solid #007bff;
+}
+
+/* Plano Curricular (Nova Seção) */
+.course-curriculum .class-level {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #007bff; /* Linha de destaque */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.course-curriculum .class-level h3 {
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.course-curriculum .class-level h4 {
+    color: #555;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.course-curriculum .class-level ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.course-curriculum .class-level ul li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #eee;
+    display: flex;
+    align-items: flex-start;
+}
+
+.course-curriculum .class-level ul li::before {
+    content: '▪'; /* Marcador de lista mais discreto */
+    color: #007bff;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1; /* Alinha o marcador com o texto */
+}
+
+.course-curriculum .class-level ul.disciplines-list li {
+    background-color: #f3f9ff; /* Fundo suave para disciplinas */
+    padding: 8px 12px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.course-curriculum .class-level ul.disciplines-list li::before {
+    content: '📚'; /* Ícone de livro para disciplinas */
+    color: #6c757d;
+    font-size: 1em;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    background-color: #e6f7ff; /* Cor suave para CTA */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.call-to-action h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.call-to-action p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+.course-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.course-footer p {
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .course-header h1 {
+        font-size: 2.5em;
+    }
+
+    .course-header p {
+        font-size: 1em;
+    }
+
+    .course-content h2 {
+        font-size: 1.8em;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .gallery-nav button {
+        padding: 8px 12px;
+        font-size: 1.2em;
+    }
+
+    .gallery-thumbnails {
+        flex-wrap: wrap; /* Quebra de linha para thumbnails */
+        justify-content: center;
+    }
+
+    .thumbnail {
+        width: 70px;
+        height: 50px;
+    }
+
+    .course-curriculum .class-level {
+        padding: 20px;
+    }
+    .course-curriculum .class-level h3 {
+        font-size: 1.6em;
+    }
+    .course-curriculum .class-level h4 {
+        font-size: 1.1em;
+    }
+    .course-curriculum .class-level ul li {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-header {
+        padding: 40px 0;
+    }
+
+    .course-header h1 {
+        font-size: 2em;
+    }
+
+    .course-content section {
+        padding: 20px;
+    }
+
+
+
+    .course-curriculum .class-level h3 {
+        font-size: 1.4em;
+    }
+}

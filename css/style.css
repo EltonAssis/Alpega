@@ -419,6 +419,23 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 @media screen and (max-width: 768px) {
+  #fh5co-hero {
+    overflow-y: auto; /* Permite scroll vertical */
+    -webkit-overflow-scrolling: touch; /* Scroll suave em iOS */
+  }
+  
+  .flexslider {
+    height: auto !important;
+  }
+  
+  .flexslider .slides li {
+    height: auto !important;
+    min-height: 70vh; /* Altura razoável para mobile */
+    touch-action: pan-y; /* Permite scroll vertical */
+  }
+}
+
+@media screen and (max-width: 768px) {
   #fh5co-hero .flexslider {
     overflow: hidden;
   }

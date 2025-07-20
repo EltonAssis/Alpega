@@ -164,3 +164,26 @@ images.forEach((image, index) => {
   item.appendChild(caption);
   gallery.appendChild(item);
 });
+
+
+// resolucao do proble de dispositivos com tela touch
+
+$(window).on('load resize', function() {
+  if ($(window).width() < 768) {
+    $('.flexslider').flexslider({
+      animation: "fade",
+      controlNav: true,
+      directionNav: false,
+      slideshow: false,
+      touch: false // Isso desativa os gestos touch
+    });
+  } else {
+    $('.flexslider').flexslider({
+      animation: "fade",
+      controlNav: true,
+      directionNav: true,
+      slideshow: true,
+      touch: true
+    });
+  }
+});

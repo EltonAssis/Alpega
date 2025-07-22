@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .top{
   width: 100%;
   background-color: rgba(255, 255, 255, 0.913);
-  top: 0;
+  top: 0.5px;
   z-index: 100;
   position: fixed;
   /* height: 13vh; */

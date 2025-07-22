@@ -2217,12 +2217,12 @@ Boletim informativo
 
 /* História */
 #fh5co-history {
-  padding: 7em 0;
+  padding-top: 20px;
   background: #f8f9fa;
 }
 
 .history-content {
-  padding: 20px;
+  padding: 40px;
 }
 
 .history-item {

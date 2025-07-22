@@ -2313,3 +2313,15 @@ Boletim informativo
     width: 360px;
   }
 }
+
+.btn-link-matricula{
+  background-color:#2d6cdf;
+  color: white !important;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.btn-link-matricula:hover{
+  background-color:#1F5F8B;
+  padding: 5px !important;
+}

@@ -46,6 +46,8 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	<link rel="shortcut icon" href="images/favicon alpega.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/news.css">
+	<script src="js/news.js"></script>
 
 </head>
 
@@ -98,7 +100,6 @@
 							<li class="has-dropdown">
 								<a>Sobre Nós</a>
 								<ul class="dropdown">
-									<li><a href="html/Submenus/regulamento.html">Regulamento</a></li>
 									<li><a href="html/Submenus/missao.html">Missão, Visão e Valores</a></li>
 									<li><a href="html/history.html">Conheça a nossa História</a></li>
 								</ul>
@@ -320,45 +321,46 @@
 			</div>
 		</div>
 
-		<div id="fh5co-blog">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Últimas Notícias</h2>
-						<p>Fique por dentro das novidades, eventos e conquistas do Colégio Alpega</p>
-					</div>
-				</div>
-				<div class="row row-padded-mb">
-					<div class="col-md-4 animate-box">
-						<div class="fh5co-event">
-							<div class="date text-center"><span>15<br>Mar.</span></div>
-							<h3><a href="#">Alpega sedia Olimpíada Nacional de Informática</a></h3>
-							<p>Nosso colégio foi selecionado para sediar a fase provincial da competição que revela
-								novos talentos em programação e raciocínio lógico.</p>
-							<p><a href="./html/news.html#noticias">Leia mais</a></p>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="fh5co-event">
-							<div class="date text-center"><span>22<br>Fev.</span></div>
-							<h3><a href="#">Novo Laboratório de Saúde inaugurado</a></h3>
-							<p>Com equipamentos de última geração, o novo espaço permitirá aulas práticas mais completas
-								para os cursos da área de saúde.</p>
-							<p><a href="./html/news.html#noticias">Leia mais</a></p>
-						</div>
-					</div>
-					<div class="col-md-4 animate-box">
-						<div class="fh5co-event">
-							<div class="date text-center"><span>05<br>Jan.</span></div>
-							<h3><a href="#">Parceria com empresas locais</a></h3>
-							<p>Firmamos convênios com 12 empresas para estágios supervisionados, garantindo experiência
-								prática aos nossos estudantes.</p>
-							<p><a href="./html/news.html#noticias">Leia mais</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<main style="margin: 0 5px 0 5px;">  
+			<h2 class="title">Notícias do Colégio Alpega</h2>
+        	<p>Fique por dentro das últimas novidades e acontecimentos</p>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/img_gallery/IMG-20250715-WA0022.jpg" alt="Time de basquete do Colégio Alpega">
+                            <span class="news-date">Em destaque</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Matriculas Abertas</h3>
+                            <p class="news-excerpt">Faça já a sua matricula e junta-se a família Alpega</p>
+                            <a href="html/news.html" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/cursos/CursoDireito/IMG-20250718-WA0025.jpg" alt="Estudantes em excursão geológica">
+                            <span class="news-date">Em destaque</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Estudantes de Ciências realizam field trip geológica</h3>
+                            <p class="news-excerpt">Os alunos do 2º ano do curso de Ciências da Natureza realizaram uma excursão à Serra da Mantiqueira para estudos geológicos práticos.</p>
+                            <a href="html/news.html" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="images/cursos/Saude/IMG-20250718-WA0044.jpg" alt="Formatura de alunos">
+                            <span class="news-date">Em destaque</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Formados pelo Alpega destacam-se internacionalmente</h3>
+                            <p class="news-excerpt">Ex-alunos do Colégio Alpega estão se destacando em universidades no exterior, com bolsas de estudo e pesquisas reconhecidas.</p>
+                            <a href="html/news.html" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+    </main>
 
 		<div id="fh5co-testimonial" style="background-image: url(images/school.jpg);">
 			<div class="overlay"></div>

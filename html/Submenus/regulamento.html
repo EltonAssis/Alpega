@@ -31,6 +31,10 @@
 
     <!-- Theme style  -->
     <link rel="stylesheet" href="../../css/style.css">
+    	<link rel="stylesheet" href="../../css/chat-boot/chat.css">
+	<link rel="stylesheet" href="../../css/whatsApp/contacto.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Modernizr JS -->
     <script src="../../js/modernizr-2.6.2.min.js"></script>
@@ -148,10 +152,57 @@
     </footer>
     </div>
 
+	<!-- Botão do WhatsApp -->
+	<a href="https://wa.me/244922486680" target="_blank" class="whatsapp-button" title="Fale conosco no WhatsApp">
+		<i class="bi bi-whatsapp"></i>
+	</a>
+
+	<!--  Chatbot start -->
+
+    <!-- Botão do Chatbot -->
+    <button class="chatbot-button" id="chatbotButton">
+        <i class="bi bi-chat-dots"></i>
+    </button>
+
+    <!-- Modal do Chatbot -->
+    <div class="chatbot-modal" id="chatbotModal">
+        <div class="chat-header">
+            <h5><i class="bi bi-robot me-2"></i>Assistente Escolar</h5>
+            <button class="close-chat" id="closeChat">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-avatar">
+                    <i class="bi bi-robot"></i>
+                </div>
+                <div class="message-content">
+                    Olá! Sou o assistente virtual da escola. Como posso ajudá-lo hoje? Posso fornecer informações sobre cursos, horários, matrículas e muito mais!
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <div class="input-group">
+                <input type="text" id="messageInput" placeholder="Digite sua mensagem..." maxlength="500">
+                <button class="send-button" id="sendButton">
+                    <i class="bi bi-send"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+	<!--  Chatbot end -->
+
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
     
+
+    	<!-- Chatbot -->
+	<script src="../../js/chat-bot/chat-bot.js"></script>
     <!-- jQuery -->
     <script src="../../js/jquery.min.js"></script>
     <!-- jQuery Easing -->

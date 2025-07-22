@@ -449,6 +449,35 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 30px;
   }
 }
+
+/*adaptação do slied em telas com infixos abaixo de 500px*/
+@media screen and (max-width: 500px) {
+  .flexslider .slides li {
+     max-height: 30vh; /* Limita a altura máxima do slide a 30% da altura da tela */
+    overflow: hidden; /* Garante que nada ultrapasse a altura máxima */
+  }
+
+  #fh5co-hero .slider-text-inner h1 {
+    font-size: 20px; /* Reduz título principal */
+  }
+
+  #fh5co-hero .slider-text-inner h2 {
+    font-size: 14px; /* Reduz subtítulo */
+  }
+
+  #fh5co-hero .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #fh5co-hero .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
   font-size: 20px;
   line-height: 1.5;

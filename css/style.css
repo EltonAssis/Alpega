@@ -1447,6 +1447,7 @@ Boletim informativo
   padding: 10px 15px;
   position: relative;
 }
+
 #fh5co-gallery h2 span:before, #fh5co-gallery h2 span:after {
   position: absolute;
   top: 18px;
@@ -2384,4 +2385,57 @@ Boletim informativo
 .btn-link-matricula:hover{
   background-color:#1F5F8B;
   padding: 5px !important;
+}
+
+
+/* Adicione isso ao seu arquivo CSS */
+
+@media screen and (max-width: 768px) {
+  #fh5co-gallery .row {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os itens quebrem para nova linha */
+    overflow-x: auto; /* Habilita o scroll horizontal */
+    scroll-snap-type: x mandatory; /* Melhora a experiência de scroll */
+    -webkit-overflow-scrolling: touch; /* Scroll suave em dispositivos iOS */
+    padding-bottom: 15px; /* Espaço para a barra de scroll */
+    margin: 0 -15px; /* Compensa o padding dos itens */
+  }
+
+  #fh5co-gallery .col-padded {
+    flex: 0 0 auto; /* Impede que os itens estiquem */
+    width: 80%; /* Largura dos itens - ajuste conforme necessário */
+    scroll-snap-align: start; /* Alinhamento do scroll */
+    padding: 0 15px; /* Espaçamento entre os itens */
+  }
+
+  #fh5co-gallery .gallery {
+    height: 200px; /* Altura fixa para os itens */
+  }
+
+  /* Estilizando a barra de scroll (opcional) */
+  #fh5co-gallery .row::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  #fh5co-gallery .row::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  #fh5co-gallery .row::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+
+  #fh5co-gallery .row::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  #fh5co-gallery .text-center{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    overflow-x: 0;
+  }
 }
